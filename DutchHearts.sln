@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DutchHearts", "DutchHearts\DutchHearts.csproj", "{953C9763-E154-422A-98E6-4097EAF57496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DutchHearts.Tests", "DutchHearts.Tests\DutchHearts.Tests.csproj", "{FC404A55-7FF4-485F-9C51-9E4BC4965588}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953C9763-E154-422A-98E6-4097EAF57496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953C9763-E154-422A-98E6-4097EAF57496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953C9763-E154-422A-98E6-4097EAF57496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953C9763-E154-422A-98E6-4097EAF57496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC404A55-7FF4-485F-9C51-9E4BC4965588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC404A55-7FF4-485F-9C51-9E4BC4965588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC404A55-7FF4-485F-9C51-9E4BC4965588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC404A55-7FF4-485F-9C51-9E4BC4965588}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
