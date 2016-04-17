@@ -1,0 +1,56 @@
+﻿@model DutchHearts.Models.GameOfHearts
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>GameOfHearts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentGamePhase.Phase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentGamePhase.Phase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlayerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoundID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoundID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

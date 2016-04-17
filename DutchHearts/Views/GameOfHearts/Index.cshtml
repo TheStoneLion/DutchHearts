@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DutchHearts.Models.GameOfHearts>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentGamePhase.Phase)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlayerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoundID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GameDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentGamePhase.Phase)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlayerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoundID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GameDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GameOfHeartsID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GameOfHeartsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GameOfHeartsID })
+        </td>
+    </tr>
+}
+
+</table>

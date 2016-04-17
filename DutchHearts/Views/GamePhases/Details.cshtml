@@ -1,0 +1,26 @@
+﻿@model DutchHearts.Models.GamePhase
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GamePhase</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Phase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phase)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GamePhaseID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

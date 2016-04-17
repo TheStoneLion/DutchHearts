@@ -1,0 +1,42 @@
+﻿@model DutchHearts.Models.Round
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Round</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentGamePhase.Phase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentGamePhase.Phase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SequenceNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SequenceNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScoreID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScoreID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RoundID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
